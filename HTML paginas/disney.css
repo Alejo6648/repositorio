@@ -1,0 +1,33 @@
+.portada{
+    background-color: rgba(21,67,96);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'waltograph', sans-serif;
+    font-size: 8em;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px 1px o #000;
+    letter-spacing: 15px;
+    margin: 0;
+    opacity: 0;
+    transform: scale(0.5) rotateZ(-39deg);
+    animation: titulo 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+        transform: scale(0.5) rotateZ(-30deg);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+@font-face {
+    font-family: "waltograph";
+    src: url(fuentes/waltographUI.ttf) format(truetype);
+}

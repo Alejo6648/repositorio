@@ -32,3 +32,12 @@ h1{
     border: 2px double seagreen;
     margin: 0 0 20px;
 }
+.box-style{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}

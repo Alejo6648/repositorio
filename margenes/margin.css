@@ -1,6 +1,5 @@
 .box-1 {
     border: 10px solid rgb(64, 64, 64, .9);
-    background-color: #707070;
 }
 h1{
     align-items: center;
@@ -24,8 +23,17 @@ h1{
     height: 250px;
     margin: 20px;
     justify-content: center;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    background-color:burlywood;
 }
 .robto{
+    display: flex;
+    flex-direction: row;
+}
+.main-box {
     display: flex;
     flex-direction: row;
 }

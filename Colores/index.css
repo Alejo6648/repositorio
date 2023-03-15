@@ -9,7 +9,6 @@ body {
 .content {
     position: relative;
     display: grid;
-
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -28,15 +27,15 @@ button {
     font-weight: bold;
 }
 button::after {
-content: "";
-position: absolute;
-top: -10px;
-left: 3%;
-width: 95%;
-height: 40%;
-background-color: #212121;
-transition: 0.5s;
-transform-origin: center;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #212121;
+    transition: 0.5s;
+    transform-origin: center;
 }
 button::before {
     content: "";

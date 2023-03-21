@@ -19,89 +19,133 @@ body{
 .color1{
     background-color: blue;
     color: black;
-    width: 550px;
-    height: auto;
-    font-size: 7em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 400;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .color2{
     color: dimgray;
     background-color: darkgoldenrod;
     font-weight: 400;
-    width: 500px;
-    height: auto;
-    font-size: 7em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .color3{
     color: burlywood;
     background-color: brown;
-    width: 500px;
-    height: auto;
-    font-size: 7em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 400;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .color4{
     color: darkblue;
     background-color: rgb(200,72,50);
-    width: 500px;
-    height: auto;
-    font-size: 5em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 250;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .color5{
-    color:mediumorchid;
+    color: crimson;
     background-color: rgb(120,120,120);
-    width: 500px;
-    height: auto;
-    font-size: 5em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 250;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 h1{
     color: mediumturquoise;
     width: 400px;
     font-weight: 400;
-    font-size: 4em;
-    height: auto;
+    font-size: 2em;
 }
 .color6{
     color: aquamarine;
     background-color: rgb(91, 38, 216);
-    width: 500px;
-    height: auto;
-    font-size: 5em;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 250;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .color7{
     color: aliceblue;
     background-color: #e018d6;
     width: 300px;
-    height: auto;
-    font-size: 3em;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 200;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .color8{
     color: lawngreen;
     background-color: #ec0404;
     width: 300px;
-    height: auto;
-    font-size: 3em;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 200;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .color9{
     color: darkslateblue;
     background-color: #56b1a2;
     width: 300px;
-    height: auto;
-    font-size: 3em;
+    height: 300px;
+    font-size: 1.5em;
     font-weight: 200;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 a{
     text-decoration: none;
     color: azure;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 500;
     margin: 150px;
 }

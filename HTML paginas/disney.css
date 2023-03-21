@@ -1,7 +1,12 @@
+body{
+    background-color: #154360;
+}
+
 .portada{
-    background-color: rgba(21,67,96);
     background-size: cover;
-    height: 100vh;
+    height: 97vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;

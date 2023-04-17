@@ -13,7 +13,7 @@ body{
 }
 h1{
     font-family: 'waltograph', sans-serif;
-    font-size: 8em;
+    font-size: 10em;
     color: #fff;
     text-shadow: 1px 1px 0 #000100, -1px -1px 0 #000, -1px -1px 0 #000, -1px 1px o #000;
     letter-spacing: 15px;
@@ -34,5 +34,5 @@ h1{
 }
 @font-face {
     font-family: "waltograph";
-    src: url(fuentes/waltographUI.ttf) format(truetype);
+    src: url(fuentes/waltograph42.otf) format(truetype);
 }

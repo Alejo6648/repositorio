@@ -1,0 +1,96 @@
+*{
+    font-family: tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 10px 15px 8px 15px;
+    text-align: center;
+    border: 3px solid rgb(255, 247, 247);
+}
+
+.dc-color{
+    background-color: darkcyan;
+    border-top-left-radius: 20px;
+    color: white;
+    block-size: 40px;
+}
+.color-img{
+    background-color: rgb(220, 213, 213);
+}
+img{
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.color{
+    background-color: rgb(220, 213, 213);
+}
+.color-x{
+    color: red;
+    font-weight: bolder;
+    background-color: rgb(220, 213, 213);
+}
+.dc-color-1{
+    background-color: darkcyan;
+    color: white;
+
+}
+.dc-color-2{
+    background-color: darkcyan;
+    color: white;
+    block-size: 40px;
+}
+.dc-color-3{
+    background-color: darkcyan;
+    color: white;
+}
+.dc-color-4{
+    background-color: darkcyan;
+    color: white;
+}
+.dc-color-5{
+    background-color: darkcyan;
+    color: white;
+}
+.dc-color-6{
+    background-color: darkcyan;
+    color: white;
+    border-bottom-left-radius: 20px;
+}
+.dc-color-7{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+.dc-color-8{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+.dc-color-9{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+.casillas-1{
+    background-color: rgb(15, 166, 15);
+    color: white;
+}
+.casillas-2{
+    background-color: rgb(0, 200, 255);
+    color: white;
+}
+.casillas-3{
+    background-color: rgb(241, 102, 51);
+    color: white;
+}
+.casillas-4{
+    background-color: rgb(89, 4, 169);
+    color: white;
+    border-top-right-radius: 20px;
+}

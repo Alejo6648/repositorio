@@ -1,45 +1,69 @@
-body{
-    margin: 5px;
-}
-.container{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-}
-.ducati{
-    margin: 10px;
-    height: 20em;
-    display: inline-block;
-    flex-direction: row;
-}
-.titulo{
-    text-align: left;
-    height: 60px;
-    width: 20px;
-}
-
-.subcontenedor2{
-    align-items: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-}
-.subcontenedor1{
-    align-items: left;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
     display: flex;
-    justify-content: left;
-}
-.monster{
-    display: inline-block;
-    margin: 10px;
-    height: 20em;
-}
-.titulo1{
-    display: flex;
-    flex-direction: row;
-}
-.titulo2{
-    display: block;
-}
-.m3{
-    display: inline-block;
-    margin: 10px;
-    height: 25em;
-}
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .moto {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .moto img {
+    width: 100%;
+  }
+  
+  .moto h3 {
+    margin: 10px 0;
+  }
+  
+  .precio {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c00;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }

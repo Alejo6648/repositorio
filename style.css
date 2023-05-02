@@ -27,7 +27,7 @@ button.hexagon{
 a{
     text-decoration: none;
     text-align: center;
-    color: rgba(15, 15, 15, 1);
+    color: rgb(146, 67, 67);
     line-height: calc(var(--v1) * 1.1);
     font-size: 2vw;
     transition: 1s;

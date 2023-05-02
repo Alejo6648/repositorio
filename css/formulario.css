@@ -98,6 +98,7 @@ display: none;
   position: absolute;
   border-radius: 6px;
   -webkit-transform-style: preserve-3d;
+  background-clip:;
 }
 .card-back {
   transform: rotateY(180deg);

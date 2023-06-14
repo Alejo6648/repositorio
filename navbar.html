@@ -1,29 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menú desplegable de la barra lateral | Kenyo León </title>
     <link rel="stylesheet" href="./css/navbar.css">
-    <title>Navbar</title>
-</head>
+    <!-- Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+    rel='stylesheet'>
+  </head>
 <body>
-    <nav>
-        <ul class="menu nav-memu">
-            <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">Services</a>
-                    <ul class="menu-item">
-                        <li><a href="#">Web desing</a></li>
-                        <li><a href="#">Graphics desing</a></li>
-                        <li><a href="#">App development</a></li>
-                        <li><a href="#">Marketing</a></li>
-                    </ul>
-            </li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-kickstarter bx-tada' style='color:#080808'></i>
+      <span class="logo_name"style='color:#080808'>Sistemas</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Panel</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Panel</a></li>
         </ul>
-    </nav>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Categoría</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Categoría</a></li>
+          <li><a href="#">Sub Menú 1</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Productos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Productos</a></li>
+          <li><a href="#">Sub Menú 1</a></li>
+          <li><a href="#">Sub Menú 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Reportes</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Reportes</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-user-voice'></i>
+            <span class="link_name">Clientes</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Clientes</a></li>
+          <li><a href="#">Sub Menú 1</a></li>
+          <li><a href="#">Sub Menú 2</a></li>
+          <li><a href="#">Sub Menú 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-contact' ></i>
+          <span class="link_name">Contactos</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Contactos</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-edit-location'></i>
+          <span class="link_name">Sedes</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Sedes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Configuración</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Configuración</a></li>
+        </ul>
+      </li>
+      <li>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Barra lateral desplegable</span>
+    </div>
+  </section>
+  <script src="./js/navbar.js"></script>
 </body>
 </html>

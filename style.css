@@ -48,6 +48,7 @@ a{
     line-height: calc(var(--v1) * 1.1);
     font-size: 2vw;
     transition: 1s;
+    padding: 1px;
 }
 .blank{
     background: transparent;

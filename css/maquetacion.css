@@ -1,4 +1,11 @@
 
+body{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
 .mainbox{
     display: grid;
     grid-template:  "empty-left cabeza        empty         empty       empty-right " 150px

@@ -1,0 +1,88 @@
+
+.mainbox{
+    display: grid;
+    grid-template:  "empty-left cabeza        empty         empty       empty-right " 150px
+                    "empty-left imagen-prin  imagen-prin  imagen-prin   empty-right "700px
+                    "empty-left aticulo1     aticulo2      aticulo3     empty-right " 400px
+                    "empty-left txt-art1     txt-art2      txt-art3     empty-right " 500px/
+                    200px        420px       420px         420px         200px;
+    grid-gap: 50px;
+        
+}
+.header{
+    grid-area: cabeza;
+    background-color: rgb(123, 118, 118);
+    border-radius: 20px;
+}
+.img-principal{
+    grid-area: imagen-prin;
+    background-color: rgb(90, 48, 83);
+    border-radius: 20px;
+}
+.img-articulo{
+    background-color: rgb(194, 201, 91);
+    border-radius: 40px;
+}
+.one{
+    grid-area: aticulo1;
+}
+.two{
+    grid-area: aticulo2;
+}
+.three{
+    grid-area: aticulo3;
+}
+
+.art1{
+    grid-area: txt-art1;
+}
+.art2{
+    grid-area: txt-art2;
+}
+.art3{
+    grid-area: txt-art3;
+}
+.texto{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.txt{
+    padding: 5px;
+    font-size: 1.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media  only screen and  (max-width:1629px){
+    .mainbox{
+    display: grid;
+    width:  100%;
+        grid-template:  "empty-left  cabeza        empty         empty      empty-right" 150px
+                        "empty-left  imagen-prin  imagen-prin  imagen-prin  empty-right" 210px
+                        "empty-left  aticulo1     aticulo2      aticulo3    empty-right" 210px
+                        "empty-left  txt-art1     txt-art2      txt-art3    empty-right" 210px/
+                        50px        280px         280px      280px    80px;
+        grid-gap: 50px;
+    }          
+    }
+
+@media  only screen and  (max-width:1100px){
+        .mainbox{
+    display: grid;
+    width:  100%;
+        grid-template: "cabeza " 20%
+                        "imagen-prin"25%
+                        "aticulo1 "25%
+                        "txt-art1"25%
+                        "aticulo2 "25%
+                        "txt-art2"25%
+                        "aticulo3 "25%
+                            "txt-art3"25%/
+                            100%        100%          100% ;
+        grid-gap: 35px;
+                
+    }
+
+}

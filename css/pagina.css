@@ -1,125 +1,111 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+body{
     background-image: url(../img/cyberpunk-night-city-xlyvdpbkgslj48wp.jpg);
-    height: 1200px;
-    image-resolution: 2540px;
-    display: block;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-  }
-  
-  header {
-    background-color: rgb(0, 0, 0);
+}
+
+html{
+    font-size: 62.5%;
+}
+nav {
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(85, 83, 10) 50%, rgb(197, 0, 0) 60%, rgb(29, 130, 130) 100%);
     color: white;
+    width: 100%;
     display: flex;
-  }
-  
-  ul li {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0.1px;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+ul li {
     display: inline-block;
     list-style: none;
-    padding: 20px 30px;
+    padding: 6px 30px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.7rem;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    margin-left: 250px;
-  }
-  
-  header img {
-    width: 70px;
-    border-radius: 15px;
-    padding: 20px;
-    margin-left: 50px;
-  }
-  
-  main {
-    padding: 20px;
+    border-radius: 20px;
+    color: #d5d1d1;
+}
+
+ul li:hover{
+    border-radius: 20px;
+    background-color: #501193;
     color: white;
-  }
-  
-  @media only screen and (max-width: 430px) {
-    body {
-      margin: 0;
-      display: hidden;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url(../img/samurai-cyberpunk-ciencia-ficcion-ciudad-cyberpunk-luces-neon-ilustracion-digital_839886-38.avif);
-      height: 800px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-  
-    ul li {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      background-color: white;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-    }
-  
-    .menu-icon::before,
-    .menu-icon::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: black;
-      position: absolute;
-      transition: transform 0.3s ease;
-    }
-  
-    .menu-icon::before {
-      top: 0;
-    }
-  
-    .menu-icon::after {
-      bottom: 0;
-    }
-  
-    .menu-icon.open::before {
-      transform: rotate(45deg);
-      top: 50%;
-    }
-  
-    .menu-icon.open::after {
-      transform: rotate(-45deg);
-      bottom: 50%;
-    }
-  
-    .menu-icon.open {
-      background-color: transparent;
-    }
-  
-    .menu {
-      display: none;
-      position: absolute;
-      top: 70px;
-      right: 20px;
-      background-color: rgb(0, 0, 0);
-      padding: 10px;
-      border-radius: 5px;
-    }
-  
-    .menu.open {
-      display: block;
-    }
-  
-    .menu li {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 0.9rem;
-    }
-  }
-  
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+    width: 88%;
+}
+
+.image-container p {
+    margin-top: 10px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'poppins', sans-serif;
+}
+
+        .hamburger {
+            display: none;
+        }
+
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #toggle:checked ~ .hamburger .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        #toggle:checked ~ .hamburger .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        #toggle:checked ~ .hamburger .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+
+        #toggle:checked ~ nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #000;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
+
+        #toggle:checked ~ nav ul li {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+        }

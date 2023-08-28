@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Título de tu página web</title>
-  <link rel="stylesheet" type="text/css" href="./css/pagina.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página básica</title>
+    <link rel="stylesheet" href="./css/pagina.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="./img/logo2.jpg" alt="MI LOGO">
-    </div>
-
-
-    <div class="menu-icon"></div>
-    <div class="menu">
-      <ul>
-        <li class="opcion1">Opcion 1</li>
-        <li class="opcion2">Opcion 2</li>
-        <li class="opcion3">Opcion 3</li>
-        <li class="opcion4">Opcion 4</li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <h1>Maquetado de página</h1>
-    <p>Contenido de la página</p>
-  </main>
-
-
+    <nav>
+        <img class="logo" src="./img/logo2.jpg" alt="Logo">
+        <input type="checkbox" id="toggle" class="hamburger">
+        <label for="toggle" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li>Inicio</li>
+            <li>Acerca de mí</li>
+            <li>Portafolio</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="image-container">
+            <img src="./img/image1.avif" alt="Imagen 1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laborum, veniam voluptatibus itaque, vel est ipsa corporis at a 
+            sint minima facilis voluptatem repellendus beatae. Reprehenderit, qui? Molestiae, velit dolorum!</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="./img/imagen2.avif" alt="Imagen 2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui eum earum blanditiis! Molestias esse eius est culpa aliquam iure, 
+            odio iusto similique earum eveniet corporis deleniti obcaecati! Aut, eveniet.</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="./img/imagen3.jpg" alt="Imagen 3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur eum corporis ex sequi quo in nobis nihil ipsa amet, 
+            velit unde iusto accusantium delectus ullam veritatis minus voluptates fuga quaerat.</p>
+        </div>
+    </main>
 </body>
 </html>
+
+
+
 

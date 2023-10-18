@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Tarjeta de producto animada receptiva </title>
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="product-card">
+    <div class="logo-cart">
+    <img src="./img/jordan_logo_icon_247957.png" alt="logo">
+    <i class='bx bx-shopping-bag'></i>
+    </div>
+    <div class="main-images">
+    <img id="color1" class="color1 active" src="./img/jordan-azul.webp" alt="blue">
+    <img id="color2" class="color2" src="./img/jordan-blanca.webp" alt="blue">
+    <img id="color3" class="color3" src="./img/jordan-negra.webp" alt="blue">
+    </div>
+    <div class="shoe-details">
+    <span class="shoe_name">Zapatillas Jordan Premium</span>
+    <p>Adquiere Zapatillas Jordan de manera segura y fácil, conoce nuestro cátalogo
+        online y haz la mejor elección.</p>
+    <div class="stars">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bx-star' ></i>
+    </div>
+    </div>
+    <div class="color-price">
+    <div class="color-option">
+        <span class="color">Colores:</span>
+        <div class="circles">
+        <span class="circle color1 active"  id="color1"></span>
+        <span class="circle color2 " id="color2"></span>
+        <span class="circle color3 " id="color3"></span>
+        </div>
+    </div>
+    <div class="price">
+        <span class="price_num">$1.700.000</span>
+        <span class="price_letter">Precio Online</span>
+    </div>
+    </div>
+    <button class="truck-button">
+    <span class="default">Añadir al carrito</span>
+    <span class="success">
+        Añadido al carrito
+        <svg viewbox="0 0 12 10">
+            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+        </svg>
+    </span>
+    <div class="truck">
+        <div class="wheel"></div>
+        <div class="back"></div>
+        <div class="front"></div>
+        <div class="box"></div>
+    </div>
+</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script src="./js/carrito.js"></script>
+</body>
+</html>

@@ -1901,54 +1901,9 @@
                     n.$Nav.make || (n.$Nav.make = r)
                 }(window)
             </script>
-            <script type="text/javascript">
-                $Nav.importEvent('navbarJS-beaconbelt');
-                $Nav.declare('img.sprite', {
-                    'png32': 'https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png',
-                    'png32-2x': 'https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-2x-reorg-privacy._CB587940754_.png'
-                });
-                $Nav.declare('img.timeline', {
-                    'timeline-icon-2x': 'https://m.media-amazon.com/images/G/01/gno/sprites/timeline_sprite_2x._CB443581191_.png'
-                });
-                window._navbarSpriteUrl = 'https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png';
-                $Nav.declare('img.pixel', 'https://m.media-amazon.com/images/G/01/x-locale/common/transparent-pixel._CB485935036_.gif');
-            </script>
-            <img src="https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png" style="display:none" alt=""/>
-            <script type="text/javascript">
-                var nav_t_after_preload_sprite = +new Date();
-            </script>
-            <script>
-                (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
-                    (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/41W974vG8QL._RC|71dXag6MKSL.js,01QvReFeJyL.js,01GoPxz8E9L.js,01eOvPdxG7L.js,71MqgZnN1GL.js,41306Iio4NL.js,115pV8Rl02L.js,01+pnQJuQ0L.js,21rDHgaooIL.js,41uimpD4OpL.js,51t-JTxfnwL.js,31Pa7Gj4ZBL.js,11lEMI5MhIL.js,31UsGkeqBUL.js,01LEzWzrPZL.js,01AqeWA7PKL.js_.js?AUIClients/NavDesktopUberAsset&mx8R1gjd#desktop.language-es.us.488400-T1.488413-T1.366740-T1');
-                });
-            </script>
 
-            <script type='text/javascript'>
-                if (window.navmet === undefined) {
-                    window.navmet = [];
-                    if (window.performance && window.performance.timing && window.ue_t0) {
-                        var t = window.performance.timing;
-                        var now = +new Date();
-                        window.navmet.basic = {
-                            'networkLatency': (t.responseStart - t.fetchStart),
-                            'navFirstPaint': (now - t.responseStart),
-                            'NavStart': (now - window.ue_t0)
-                        };
-                        window.navmet.push({
-                            key: "NavFirstPaintStart",
-                            end: +new Date(),
-                            begin: window.ue_t0
-                        });
-                    }
-                }
-                if (window.ue_t0) {
-                    window.navmet.push({
-                        key: "NavMainStart",
-                        end: +new Date(),
-                        begin: window.ue_t0
-                    });
-                }
-            </script>
+
+
             <script type='text/javascript'>
                 window.navmet.tmp = +new Date();
             </script>

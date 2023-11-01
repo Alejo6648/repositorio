@@ -154,7 +154,9 @@ select {
     background-color: rgb(0, 0, 0, .5);
     z-index: 10;
 }
-
+.box-modal-none {
+    display: none;
+}
 .modal{
     width: 90%;
     height: 80%;
@@ -252,40 +254,49 @@ select {
 .main-img{
     width: 80%;
     height: 50%;
+    cursor: pointer;
 }
 
 .main-img-2{
     width: 80%;
     height: 50%;
+    cursor: pointer;
 }
 
 .main-img-3{
     width: 80%;
     height: 50%;
+    cursor: pointer;
 }
 
 .main-img-4{
     width: 160%;
     height: 50%;
+    cursor: pointer;
 }
 
-.img-1{
+.img-thumbnail{
     width: 50px;
     border: 2px solid rgb(112, 123, 124, 0.5);
+    position: absolute;
 }
 
-.img-2{
-    width: 50px;
-    border: 2px solid rgb(112, 123, 124, 0.5);
-    
+.img-thumbnail:hover{
+    border: 2px solid #1F618D;
 }
 
-.img-3{
-    width: 50px;
-    border: 2px solid rgb(112, 123, 124, 0.5);
+.selected img {
+    border: 2px solid orange;
+}   
+.selected img:hover {
+    border: 2px solid orange !important;
 }
-
-.img-4{
-    width: 50px;
-    border: 2px solid rgb(112, 123, 124, 0.5);
-}
+.img-modal {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .img-modal.visible {
+    opacity: 1;
+  }
+  

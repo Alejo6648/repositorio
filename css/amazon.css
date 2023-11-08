@@ -300,3 +300,72 @@ select {
     opacity: 1;
   }
   
+  /* info principal */
+  .box-main-img-info{
+    grid-area: box-main-img-modal;
+    width: 90%;
+    height: 110%;
+    margin-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cuadros-info{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.main-img-info{
+    width: 12%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.main-img-2-info{
+    width: 12%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.main-img-3-info{
+    width: 12%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.main-img-4-info{
+    width: 12%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.img-thumbnail-info{
+    width: 40px;
+    height: 45px;
+    border: 2px solid rgb(112, 123, 124, 0.5);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.img-thumbnail-info:hover{
+    border: 2px solid #1F618D;
+}
+
+.selected-info img {
+    border: 2px solid orange;
+}   
+.selected-info img:hover {
+    border: 2px solid orange !important;
+}
+.img-info {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .img-info.visible {
+    opacity: 1;
+  }

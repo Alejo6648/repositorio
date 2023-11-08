@@ -57,4 +57,33 @@ miniDivs.forEach((miniDiv) => {
  });
 });
 
+//info principal
+const mainImgInfo = document.querySelector('.box-main-img-info');
+const miniDivsInfo = document.querySelectorAll('.main-img-info, .main-img-2-info, .main-img-3-info, .main-img-4-info');
 
+miniDivsInfo.forEach((miniDiv) => {
+ miniDivInfo.addEventListener('click', () => {
+   // Para que cambie el color de borde
+   miniDivsInfo.forEach((div) => {
+     div.classList.remove('selected-info');
+   });
+   // Al color que tenga la clase select 
+   miniDivInfo.classList.add('selected-info'); 
+
+   const img = miniDivInfo.querySelector('img-info');
+
+   // Crea una nueva imagen
+   const newImg = document.createElement('img-info');
+   newImg.src = img.src;
+   newImg.className = 'img-info';
+
+   // Añade la nueva imagen a la div
+   mainImgDiv.innerHTML = '';
+   mainImgDiv.appendChild(newImg);
+
+   // Después de un retraso, agrega la clase visible a la nueva imagen
+   setTimeout(() => {
+     newImg.classList.add('visible');
+   }, 0.5); // Ajusta este valor según tus necesidades
+ });
+});

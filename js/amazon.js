@@ -30,6 +30,7 @@ x.addEventListener('click', ()=> {
 const mainImgDiv = document.querySelector('.box-main-img-modal');
 const miniDivs = document.querySelectorAll('.main-img, .main-img-2, .main-img-3, .main-img-4');
 
+
 miniDivs.forEach((miniDiv) => {
  miniDiv.addEventListener('click', () => {
    // Para que cambie el color de borde
@@ -46,14 +47,12 @@ miniDivs.forEach((miniDiv) => {
    newImg.src = img.src;
    newImg.className = 'img-modal';
 
-   // Añade la nueva imagen a la div
    mainImgDiv.innerHTML = '';
    mainImgDiv.appendChild(newImg);
 
-   // Después de un retraso, agrega la clase visible a la nueva imagen
    setTimeout(() => {
      newImg.classList.add('visible');
-   }, 0.5); // Ajusta este valor según tus necesidades
+   }, 0.5);
  });
 });
 
@@ -61,29 +60,30 @@ miniDivs.forEach((miniDiv) => {
 const mainImgInfo = document.querySelector('.box-main-img-info');
 const miniDivsInfo = document.querySelectorAll('.main-img-info, .main-img-2-info, .main-img-3-info, .main-img-4-info');
 
-miniDivsInfo.forEach((miniDiv) => {
+miniDivsInfo.forEach((miniDivInfo) => {
  miniDivInfo.addEventListener('click', () => {
    // Para que cambie el color de borde
    miniDivsInfo.forEach((div) => {
      div.classList.remove('selected-info');
    });
-   // Al color que tenga la clase select 
-   miniDivInfo.classList.add('selected-info'); 
-
-   const img = miniDivInfo.querySelector('img-info');
-
-   // Crea una nueva imagen
-   const newImg = document.createElement('img-info');
-   newImg.src = img.src;
-   newImg.className = 'img-info';
-
-   // Añade la nueva imagen a la div
-   mainImgDiv.innerHTML = '';
-   mainImgDiv.appendChild(newImg);
-
-   // Después de un retraso, agrega la clase visible a la nueva imagen
-   setTimeout(() => {
-     newImg.classList.add('visible');
-   }, 0.5); // Ajusta este valor según tus necesidades
  });
+});
+
+
+var images = document.querySelectorAll('.main-img-info img, .main-img-2-info img, .main-img-3-info img, .main-img-4-info img');
+var mainImage = document.getElementById('img-wl');
+
+images.forEach(function(image) {
+   image.addEventListener('mouseover', function() {
+       mainImage.src = this.src;
+   });
+});
+
+var mainImage = document.getElementById('img-wl');
+var modalWindow = document.getElementById('boxModal');
+var modalImage = document.querySelector('.img-modal');
+
+mainImage.addEventListener('click', function() {
+ modalImage.src = this.src;
+ modalWindow.style.display = 'flex';
 });

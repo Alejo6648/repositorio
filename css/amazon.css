@@ -4,6 +4,7 @@
     margin: 0;
     font-family: sans-serif;
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -142,6 +143,10 @@ select {
 
 /* modal */
 
+#boxModal {
+    display: none;
+ } 
+
 .box-modal{
     position: fixed;
     top: 0;
@@ -172,6 +177,7 @@ select {
 
 .close{
     position: absolute;
+    cursor: pointer;
     top: 8px;
     right: 12px;
     font-size: 1.4em;
@@ -303,73 +309,57 @@ select {
   /* info principal */
   .box-main-img-info{
     display: flex;
-    margin-left: -80%;
-    width: 100%;
+    margin-left: -680%;
+    width: 110%;
     height: 100%;
+    padding: 10px 0;
+    cursor: pointer;
 }
 
 .cuadros-info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 20%;
+    margin: 0;
+    width: 0;
  }
 
  .info-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 100px;
-    margin-left: -5%;
+    grid-template-columns: 7fr 1fr;
+    padding: 90px;
+    margin-left: 10%;
+    column-gap: 5px;
+    row-gap: 5px; 
  }
+ 
 
-.main-img-info{
+ .main-img-info, .main-img-2-info, .main-img-3-info, .main-img-4-info{
+    flex-grow: 1;
     width: 12%;
     height: 50%;
     cursor: pointer;
-}
-
-.main-img-2-info{
-    width: 12%;
-    height: 50%;
-    cursor: pointer;
-}
-
-.main-img-3-info{
-    width: 12%;
-    height: 50%;
-    cursor: pointer;
-}
-
-.main-img-4-info{
-    width: 12%;
-    height: 50%;
-    cursor: pointer;
-}
+    margin: 0;
+    padding: 0;
+ }
 
 .img-thumbnail-info{
     width: 40px;
     height: 50px;
-    border: 2px solid rgb(112, 123, 124, 0.5);
+    border: 1px solid black;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .img-thumbnail-info:hover{
-    border: 2px solid #1F618D;
+    box-shadow: 0px 0px 10px #85C1E9;
 }
 
-.selected-info img {
-    border: 2px solid orange;
-}   
-.selected-info img:hover {
-    border: 2px solid orange !important;
-}
 .img-info {
     transition: opacity 1s ease-in-out;
-    width: 45%;
-    height: 50%;
-    padding: 120px;
-    margin-right: 20%;
+    width: 130%;
+    height: 100%;
+    padding: 0 100px;
+    
   }
   
   .img-info.visible {

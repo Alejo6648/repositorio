@@ -302,22 +302,25 @@ select {
   
   /* info principal */
   .box-main-img-info{
-    grid-area: box-main-img-modal;
-    width: 90%;
-    height: 110%;
-    margin-left: 90px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: -80%;
+    width: 100%;
+    height: 100%;
 }
-
 
 .cuadros-info{
-    padding: 0;
-    margin: 0;
-    justify-content: center;
     display: flex;
-}
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20%;
+ }
+
+ .info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    margin-left: -5%;
+ }
 
 .main-img-info{
     width: 12%;
@@ -345,7 +348,7 @@ select {
 
 .img-thumbnail-info{
     width: 40px;
-    height: 45px;
+    height: 50px;
     border: 2px solid rgb(112, 123, 124, 0.5);
     position: absolute;
     border-radius: 10px;
@@ -362,8 +365,11 @@ select {
     border: 2px solid orange !important;
 }
 .img-info {
-    opacity: 1;
     transition: opacity 1s ease-in-out;
+    width: 45%;
+    height: 50%;
+    padding: 120px;
+    margin-right: 20%;
   }
   
   .img-info.visible {

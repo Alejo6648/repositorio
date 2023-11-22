@@ -364,13 +364,18 @@ z-index: 20;
     padding-bottom: 10px;
 }
 .txt-caracteristicas-modal {
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: justify;
-    line-height: 4em;
+    line-height: 2em;
     font-family: 'Poppins', sans-serif;
 }
 .txt-estilos-caracteristicas {
-    color: rgb(96, 96, 96);
+    font-size: 0.8em;
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.txt-estilos-normal{
     font-size: 0.8em;
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
@@ -425,7 +430,7 @@ z-index: 20;
     position: relative;
     display: grid;
     grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal    principal-compra-modal"  /
-                    10px                        1fr                             400px                   300px;
+                    10px                        1fr                             700px                   550px;
  }
 .principal-container-img {
     grid-area: principal-container-img;
@@ -444,10 +449,6 @@ z-index: 20;
     height: 100%;
     transition: scale 400ms;
 }
-.img-box-principal:hover {
-    cursor: url(../img/busquedaLupa.png), auto;
-    scale: 110%;
-}
 
 .principal-info-modal {
     grid-area: principal-info-modal;
@@ -455,9 +456,27 @@ z-index: 20;
 }
 .principal-compra-modal {
     grid-area: principal-compra-modal;
-    margin: 30px 30px 30px 30px;
-    padding: 10px 20px 10px 20px;
-    border: solid 1px rgb(182, 182, 182);
+    padding: 20px 20px;
+}
+
+.primer-cuadro{
+    border: 1px solid #CACFD2;
+    margin: 10%;
+    margin-right: 260px;
+    margin-bottom: 40px;
+    margin-left: 1%;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.agregar-lista{
+    border: 1px solid #565959;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.agregar-lista:hover{
+    background-color: #F2F3F4;
+
 }
 /* principal-compra-modal */
 .compra-precio {
@@ -465,28 +484,37 @@ z-index: 20;
 }
 .txt-moneda-number {
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     align-items: flex-start;
 }
-.txt-precio {
-    font-size: 1.5em;
-    font-weight: 500;
+.txt-caracteristicas-producto{
+    font-family: 'Poppins', sans-serif;
+}
+.list-one .list-two .list-three .list-fourt .list-five{
+    list-style-type: disc;
 }
 .txt-detalles, .principal-enviar-a {
-    color: rgb(81, 158, 206);
+    color: #0E6655;
+
 }
 .principal-enviar-a {
     font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #A6ACAF;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 .principal-icon {
     color: rgb(35, 33, 33);
     font-weight: 100;
 }
 .txt-disponible {
-    color: rgb(52, 119, 35);
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     font-weight: 500;
+    font-size: 13px;
 }
 .envio-gratis {
     font-weight: 700;
@@ -519,12 +547,19 @@ z-index: 20;
 .shop-compras {
     grid-area: principal-info-modal;
     font-size: 1.1em;
+    border: 1px solid #CACFD2;
+    margin: 20px;
+    margin-top: -30px;
+    margin-left: 1%;
+    border-radius: 8px;
+    margin-right: 260px;
+    padding: 20px;
 }
 .comprar-ahora, .agregar-carrito  {
     width: 200px;
     height: 35px;
     margin-top: 20px;
-    border-radius: 25px;
+    border-radius: 8px;
     font-weight: 300;
     cursor: pointer;
     display: flex;
@@ -532,20 +567,83 @@ z-index: 20;
     align-items: center;
 }
 .agregar-carrito {
-    border: 1px solid rgb(255, 216, 20);
-    background-color: rgb(255, 215, 0);
-
+    border: 1px solid #CACFD2;
+    font-size: 15px;
+    font-family: 'Poppis', sans-serif;  
 }
-
+.agregar-carrito:hover{
+    background-color: rgb(172, 179, 184, 0.1);
+}
 .comprar-ahora {
-
-    border: 1px solid rgb(250, 137, 0);
-    background-color: rgb(255, 140, 0);
-
+    background-color: rgb(255, 215, 0);
+    font-size: 15px;
+    font-family: 'Poppis', sans-serif;  
 }
 .comprar-ahora:hover {
-    box-shadow: 10px 10px 60px rgb(255, 140, 0);
+    background-color: rgb(241, 196, 15, 0.9);
 }
+.agregar-accesorio{
+    border: 1px solid #CACFD2;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-right: 50%;
+    padding: 5px 20px;
+   }
+   .accesorio{
+    border-bottom: 1px solid #CACFD2;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 119%;
+    text-align: center;
+    position: relative;
+    left: -20px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+   }
+   
+
+   .accesorio-1{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #0E6251;
+    display: flex;
+    margin-top: 10px;
+   }
+   .accesorio-2{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #0E6251;
+   }
+   .accesorio-3{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #0E6251;
+   }
+   .accesorio-4{
+    margin-top: 10px;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #922B21 ;
+   }
+
+   .agregar-carrito-boton{
+    display: flex;
+    color: #424949 ;
+    border: 1px solid rgb(255, 215, 0);
+    background-color: rgb(255, 215, 0);
+    padding: 2px;
+    margin-bottom: 5px; 
+    border-radius: 10px;
+    margin-top: -18px;
+    margin-left: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+   }
+  
 /*  */
 .principal-main-img-modal {
     width: 60%;

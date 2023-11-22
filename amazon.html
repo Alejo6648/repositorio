@@ -3,99 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Amazon</title>
     <link rel="stylesheet" href="./css/amazon.css">
     <link rel="stylesheet" href="icons/all.css">
 </head>
 <body>
-    <header>
-        <div class="logo ">
+<header id="header">
+    <div class="header-logo">
+        <img class="img-main-logo" src="./img/White-Amazon-Logo-Transparent-Background.png" alt="">
+    </div>
+    <div class="header-enviar-a">
+        <div class="box-icon-location">
+            <i class="icon-location fa-solid fa-location-dot"></i>
         </div>
-        <div class="ubicacion">
-            <div class="icono-ubicacion"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="enviar">Enviar a</div>
-            <div class="pais"><b>Colombia</b></div> 
+        <div class="box-texto-enviar-a">
+            <span class="texto-enviar-a">Enviar a</span>
         </div>
-        <div class="content-busqueda">
-            <select name="" id="nombre"><option value="">Todos</option></select>
-            <input type="text" id="headerSearchInput" class="input_buscador" placeholder="   Buscar Amazon">
-            <button class="icon-busqueda"><i class="search fa-solid fa-magnifying-glass"></i></button>
-        </div>        
-        <div class="idioma">
-            <img class="bandera" src="./img/Flag_of_Colombia.png" alt="">
-            <div class="lengua"><b>CO</b></div>
-        </div>
-        <div class="hola">
-            <div class="saludo">Hola, Identificate</div>
-            <div class="cuenta"><b>Cuenta y Listas</b></div>
-        </div>
-        <div class="reembolso">
-            <div class="retornar">Devoluciones</div>
-            <div class="orden"><b>Y pedidos</b></div>
-        </div>
-        <div class="carrito">
-            <div class="i-carrito"><i class="fa-solid fa-cart-shopping"></i></div>
-            <div class="l-carrito"><b>Carrito</b></div>
-        </div>
-    </header>
-
-    <div class="info-container">
-        <div class="cuadros-info">
-            <div class="main-img-info">
-                <img class="img-thumbnail-info" src="./img/51ojzJk77qL._SL1500_.jpg" alt="xbox">
-            </div>
-            <div class="main-img-2-info">
-                <img class="img-thumbnail-info" src="./img/61c937dHIvL._SL1500_.jpg" alt="xbox">
-            </div>
-            <div class="main-img-3-info">
-                <img class="img-thumbnail-info" src="./img/71ut3JnAiUL._SL1500_.jpg" alt="xbox">
-            </div>
-            <div class="main-img-4-info">
-                <img class="img-thumbnail-info" src="./img/51b72fFNWRL._SL1500_.jpg" alt="xbox">
-            </div>                    
-        </div>
-        <div class="box-main-img-info">
-            <a href=""><img id="img-wl" class="img-info" src="./img/51ojzJk77qL._SL1500_.jpg" alt="xbox"></a>
+        <div class="box-texto-colombia">
+            <span class="texto-colombia">China</span>
         </div>
     </div>
-
-    <div id="mainContent" class="ventana"></div>
-    <div id="boxModal" class="box-modal">
-        <div class="modal">
-            <div class="close"><i class="fa-solid fa-xmark"></i></div>
-            <div class="box-main-img-modal">
-                <img class="img-modal" src="./img/51ojzJk77qL._SL1500_.jpg" alt="xbox">
+    <div id="boxHeaderSearchInput" class="box-header-search-input">
+        <div id="headerSearchInput" class="header-search-input">
+            <div class="box-filtro-todos">
+                <div class="filtro-todos">
+                    <span class="header-todos">Todos</span>
+                    <i class="icon-chevron fa-solid fa-chevron-down"></i>
+                </div>
             </div>
-            <div class="info-modal">
-                <div class="main-title">
-                    <ul class="content-titles">
-                        <li>VIDEOS</li>
-                        <li>IMAGENES</li>
+            <div class="box-buscar-amazon">
+                <div class="buscar-amazon">
+                    <input  class="input-busqueda" type="text" name="" id="" placeholder="Buscar Amazon">
+                </div>
+            </div>
+            <div class="box-lupa">
+                <div class="lupa">
+                    <i class="icon-lupa fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-country-flag">
+        <img src="./img/Sin título.png" alt="">
+        <span class="txt-Es">Es</span>
+        <i class="fa-solid fa-chevron-down fa-beat"></i>
+    </div>
+
+    <div class="header-identificate">
+        <span class="txt-hola-identificate">Hola, identificate</span><br>
+        <span class="txt-cuentas-listas">Cuentas y listas</span>
+        <i class="fa-solid fa-chevron-down fa-beat"></i>
+    </div>
+
+    <div class="header-devoluciones">
+        <span class="txt-devoluciones">Devoluciones</span><br>
+        <span class="txt-pedidos">Y Pedidos</span>
+    </div>
+
+    <div class="header-carrito">
+        <i class=" carrito fa-solid fa-baby-carriage"></i>
+        <span>Carrito</span>    
+    </div>
+</header>
+<!--  -->
+<!--  -->
+<nav class="main-nav">
+    <ul class="main-menu">
+        <li class="hori">&#9776 Todo</li>
+        <li class="hori">Ofertas del Día</li>
+        <li class="hori">Servicios al Cliente</li>
+        <li class="hori">Listas</li>
+        <li class="hori">Tarjetas de regalo</li>
+        <li class="hori">Vender</li>
+    </ul>
+</nav>
+<!--  -->
+<!--  -->
+<main id="modalt" class="modalt">
+<div id="main-content" class="main-content">  
+    <div class="box-modal">
+        <div class="modal">
+            <div id="btnClose" class= "btn-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!--  -->
+            <div class="box-video-imagenes">
+                <div class="video-imagenes">
+                    <ul>
+                        <li><a id="optionVideos" class="option-videos">VIDEOS</a></li>
+                        <li><a id="optionImagenes" class="option-imagenes option-selected">IMÁGENES</a></li>
                     </ul>
                 </div>
-                <div class="texto">
-                    <p class="parrafo">
-                        Xbox Series X</p>
-                    <p class="parrafo-2">Estilo:Series X</p>
+            </div>
+            <!--  -->
+            <div class="box-main-img-modal">
+                <img id="mainImgModal" class="main-img-modal img-box" src="./img/51ojzJk77qL._SL1500_.jpg" alt="">
+            </div>
+            <div class="info-modal">
+                <label class="txt-caracteristicas-modal">Xbox Series X</label>
+            </br>
+                <label class="txt-estilos-caracteristicas">Plataforma :Xbox Series X </label>
+            </br>
+            </br>
+            <label class="txt-estilos-caracteristicas-2">Edición:Console Only</label>
+            
+            <div class="container-img">
+                <div id="boxMainImgModal1" class="article article-1">
+                    <img id="mainImgModal1" class="img-mini" src="./img/51ojzJk77qL._SL1500_.jpg" alt="Xbox">
                 </div>
-                <div class="cuadros">
-                    <div class="main-img">
-                        <img class="img-thumbnail" src="./img/51ojzJk77qL._SL1500_.jpg" alt="xbox">
-                    </div>
-                    <div class="main-img-2">
-                        <img class="img-thumbnail" src="./img/61c937dHIvL._SL1500_.jpg" alt="xbox">
-                    </div>
-                    <div class="main-img-3">
-                        <img class="img-thumbnail" src="./img/71ut3JnAiUL._SL1500_.jpg" alt="xbox">
-                    </div>
-                    <div class="main-img-4">
-                        <img class="img-thumbnail" src="./img/51b72fFNWRL._SL1500_.jpg" alt="xbox">
-                    </div>                    
+                <div id="boxMainImgModal2" class="article article-2">
+                    <img id="mainImgModal2" class="img-mini" src="./img/61c937dHIvL._SL1500_.jpg" alt="Xbox">
+                </div>
+                <div id="boxMainImgModal3" class="article article-3">
+                    <img id="mainImgModal3" class="img-mini" src="./img/71ut3JnAiUL._SL1500_.jpg" alt="Xbox">
+                </div>
+                <div id="boxMainImgModal4" class="article article-4">
+                    <img id="mainImgModal4" class="img-mini" src="./img/51b72fFNWRL._SL1500_.jpg" alt="Xbox">
                 </div>
             </div>
         </div>
+        </div>
+    </div> 
     </div>
+</main>
+<!--  -->
+<!--  -->
+<div id="mainBarco" class="main-barco"> 
+    <div class="principal-box-main-img-modal">
+        <img id="mainImgModal111" class="principal-main-img-modal img-box-principal" src="./img/51ojzJk77qL._SL1500_.jpg" alt="">
+    </div>
+    <div class="principal-info-modal">
+        <label class="txt-caracteristicas-modal">Xbox Series X</label>
+        <label class="txt-estilos-caracteristicas"></label><br><br>
+        <div class="infoproduc">
+            <a class="marca" href="#">Visita la tienda de Xbox</a>
+            <span class="califica">4.8
+            <!--  -->
+            <div class="box-estrellas">
+                <div class="estrella">
+                    <i id="star1" class="fa-regular fa-star"></i>
+                </div>
+                <div class="estrella">
+                    <i id="star2" class="fa-regular fa-star"></i>
+                </div>
+                <div class="estrella">
+                    <i id="star3" class="fa-regular fa-star"></i>
+                </div>
+                <div class="estrella">
+                    <i id="star4" class="fa-regular fa-star"></i>
+                </div>
+                <div class="estrella">
+                    <i id="star5" class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            
+            
 
-    <script src="./js/amazon.js"></script>
+            <select class="star-select" name=" " id=""></select>
+                <span class="linea"> | </span>
+                    <a class="preguntas" href="#">23,930 calificaciones</a>
+                </span><hr>
+        </div>
+    <div class="compra-precio">
+        <label class="txt-moneda-number">Sobre <span class="txt-precio">este</span><span> artículo</span></label>
+    </div>
+</div>
+<!--  -->
+<!--  -->
+<div class="principal-container-img">
+    <div id="boxMainImgModal11" class="principal-article principal-article-1">
+        <img id="mainImgModal11" class="img-mini-p" src="./img/51ojzJk77qL._SL1500_.jpg" alt="">
+    </div>
+    <div id="boxMainImgModal22" class="principal-article  principal-article-2">
+        <img id="mainImgModal22" class="img-mini-p" src="./img/61c937dHIvL._SL1500_.jpg" alt="">
+    </div>
+    <div id="boxMainImgModal33" class="principal-article  principal-article-3">
+        <img id="mainImgModal33" class="img-mini-p" src="./img/71ut3JnAiUL._SL1500_.jpg" alt="">
+    </div>
+    <div id="boxMainImgModal44" class="principal-article  principal-article-4">
+        <img id="mainImgModal44" class="img-mini-p" src="./img/51b72fFNWRL._SL1500_.jpg" alt="">
+    </div>
+</div>
+<!--  -->
+<!--  -->
+<div class="principal-compra-modal">
+
+        <label class="txt-caracteristicas-modal-entrega">No hay ofertas destacadas disponibles</label>
+        <label class="txt-detalles">Más Informacion<i class="fa-solid fa-angle-down"></i></label><br>
+
+        <div class="principal-enviar-a">
+            <label class="principal-icon"><i class="icon-location fa-solid fa-location-dot"></i></label>
+                <span> Enviar a</span>
+                <span>China</span><br><br>
+        </div>
+        <span class="txt-disponible">Disponible</span>
+
+        <div class="principal-cantidad">
+            <select class="principal-select" name="cantidad">
+                <option value="1">Cantidad 1</option>
+                <option value="2">Cantidad 2</option>
+                <option value="3">Cantidad 3</option>
+            </select>
+        </div>
+        <div class="shop-compras">
+            <div id="comprarAhora" class="comprar-ahora">
+                <i class="fa-solid fa-credit-card"><span>Comprar ahora</span></i>
+            </div>
+            <div id="agregarCarrito" class="agregar-carrito">
+                <i class="fa-solid fa-car-side"><span>Agregar al carrito</span></i>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/amazon.js"></script>
 </body>
 </html>

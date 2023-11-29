@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: poppins;
 }
+
 header {
     background-color: #0B5345 ; 
     width: 100%;
@@ -18,7 +19,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    width: 150px;
     height: 65px;
 }
 .img-main-logo {
@@ -26,11 +27,17 @@ header {
     color: white;
     padding-left: 15px;
 }
+.borde{
+    border-top: 1px solid #CACFD2;
+    align-items: center;
+    display: flex;
+    padding-top: 60px;
+}
 .header-enviar-a {
     grid-area: header-enviar-a;
     display: grid;
     grid-template: "box-icon-location box-texto-enviar-a" 
-                   "box-icon-location box-texto-colombia" /
+                    "box-icon-location box-texto-colombia" /
                     20px          70px;  
 }
 .box-icon-location {
@@ -76,8 +83,8 @@ header {
 .box-filtro-todos {
     grid-area: box-filtro-todos;
     background-color: rgb(230,230,230);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .filtro-todos {
     display: flex;
@@ -110,11 +117,12 @@ header {
 .box-lupa {
     height: 42px;
     background-color: #FADBD8;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 5px;
 }
 .lupa {
     grid-area: lupa;
@@ -182,15 +190,19 @@ border-radius: 12px;
   
   .hori:hover {
     cursor: pointer;
-    color: rgb(158, 158, 158);
-    border: 1 solid white;
+    border: 1px solid white;
   }
 /*  */
 .header-country-flag {
     color: white;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    background-image: url(../img/ilustracion-bandera-estados-unidos_53876-18165.avif);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
 }
 .header-identificate {
     color: white;
@@ -430,19 +442,21 @@ z-index: 20;
     position: relative;
     display: grid;
     grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal    principal-compra-modal"  /
-                    10px                        1fr                             700px                   550px;
- }
+                    50px                        1fr                             400px                   450px;
+}
 .principal-container-img {
     grid-area: principal-container-img;
 }
 .principal-box-main-img-modal {
     grid-area: principal-box-main-img-modal;
     width: 100%;
-    height: 120%;
-    display: flex;  
+    height: 110%;
+    display: flex;
+    margin-top: -160px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    cursor: pointer;
 }
 .img-box-principal {
     width: 100%;
@@ -454,15 +468,39 @@ z-index: 20;
     grid-area: principal-info-modal;
     padding: 30px 10px 30px 0;
 }
+.precio-producto{
+    border-bottom: 1px solid #A6ACAF;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    padding-top: 13px;
+}
 .principal-compra-modal {
     grid-area: principal-compra-modal;
-    padding: 20px 20px;
+    padding: 20px;
+    margin-top: -35px;
 }
 
+.texto-precio{
+    color: #565959;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.dolar{
+    color: #943126;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.carac{
+    color: #943126;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
 .primer-cuadro{
     border: 1px solid #CACFD2;
     margin: 10%;
-    margin-right: 260px;
+    margin-right: 150px;
     margin-bottom: 40px;
     margin-left: 1%;
     padding: 20px;
@@ -491,9 +529,20 @@ z-index: 20;
 .txt-caracteristicas-producto{
     font-family: 'Poppins', sans-serif;
 }
-.list-one .list-two .list-three .list-fourt .list-five{
-    list-style-type: disc;
+.list-one, .list-two, .list-three, .list-fourt, .list-five, .list-six {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1em;
+    padding-bottom: 5px;
 }
+
+.list-one::before, .list-two::before, .list-three::before, .list-fourt::before, .list-five::before, .list-six::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .txt-detalles, .principal-enviar-a {
     color: #0E6655;
 
@@ -552,13 +601,13 @@ z-index: 20;
     margin-top: -30px;
     margin-left: 1%;
     border-radius: 8px;
-    margin-right: 260px;
+    margin-right: 150px;
     padding: 20px;
 }
 .comprar-ahora, .agregar-carrito  {
-    width: 200px;
+    width: 220px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 8px;
     font-weight: 300;
     cursor: pointer;
@@ -586,10 +635,10 @@ z-index: 20;
     border: 1px solid #CACFD2;
     border-radius: 8px;
     margin-top: 30px;
-    margin-right: 50%;
+    width: 265px;
     padding: 5px 20px;
-   }
-   .accesorio{
+}
+.accesorio{
     border-bottom: 1px solid #CACFD2;
     font-weight: bold;
     font-size: 14px;
@@ -601,35 +650,40 @@ z-index: 20;
     left: -20px;
     padding-bottom: 8px;
     padding-top: 5px;
-   }
-   
+}
 
-   .accesorio-1{
+.accesorio-1{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     color: #0E6251;
     display: flex;
     margin-top: 10px;
-   }
-   .accesorio-2{
+    cursor: pointer;
+}
+.accesorio-2{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     color: #0E6251;
-   }
-   .accesorio-3{
+    cursor: pointer;
+}
+.accesorio-3{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     color: #0E6251;
-   }
-   .accesorio-4{
+    cursor: pointer;
+}
+.accesorio-1:hover, .accesorio-2:hover, .accesorio-3:hover {
+    color: #C7511F;
+}
+.accesorio-4{
     margin-top: 10px;
     display: flex;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     color: #922B21 ;
-   }
+}
 
-   .agregar-carrito-boton{
+.agregar-carrito-boton{
     display: flex;
     color: #424949 ;
     border: 1px solid rgb(255, 215, 0);
@@ -642,8 +696,11 @@ z-index: 20;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-   }
-  
+    cursor: pointer;
+}
+.agregar-carrito-boton:hover{
+    background-color: #ddcb26;
+}
 /*  */
 .principal-main-img-modal {
     width: 60%;
@@ -681,6 +738,17 @@ z-index: 20;
     margin-left: auto;
     line-height: 30px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #A6ACAF;
+  }
+  .preguntas{
+    text-decoration: none;
+    color: #1F618D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  .preguntas:hover{
+    color: #C7511F;
+    text-decoration: underline;
   }
   .marca{
     text-decoration: none;
@@ -700,31 +768,3 @@ z-index: 20;
     display: block;
     font-size: 14px;
   }
-/*   .fa-star, .fa-star-half-stroke{
-    color: #ffa600;
-  } */
-  .star-select{
-    border: none;
-    font-size: 4px;
-    font-weight: 0px;
-    color: #565959;
-  }
-  .valoracion, .preguntas{
-    text-decoration: none;
-    color: #007185;
-  }
-  .preguntas:hover{
-    text-decoration: underline;
-    color: #C7511F;
-  }
-
-  /*  */
-  /*  */
-  .estrella {
-    font-size: 5em;
-    color: #eb9034;
-}
-.box-estrellas {
-    display: flex;
-    flex-direction: row;
-}

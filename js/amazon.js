@@ -172,7 +172,6 @@ containerImg.addEventListener('mouseover', (event) => {
 
 /*  */
 /*  */
-// ... (resto de tu código)
 
 window.onload = () => {
   let modalt = document.getElementById('modalt');
@@ -187,27 +186,3 @@ window.onload = () => {
     modalt.style.display = "block";
   });
  }
- 
- 
-
-const stars = Array.from({length: 5}, (_, i) => document.getElementById(`star${i+1}.0`));
-
-let puntuacionGuardada = 0;
-
-document.querySelector('.box-estrellas').addEventListener("mouseover", (e) => {
-  const puntuacion = parseFloat(e.target.id.slice(4));
-  stars.forEach((star, i) => {
-    if (puntuacion > i + 0.7) star.setAttribute("class", "fa-solid fa-star");
-    else if (puntuacion > i + 0.2) star.setAttribute("class", "fa-solid fa-star-half-alt");
-    else star.setAttribute("class", "fa-regular fa-star");
-  });
-  puntuacionGuardada = puntuacion;
-});
-
-document.querySelector('.box-estrellas').addEventListener("mouseout", () => {
-  stars.forEach((star, i) => {
-    if (puntuacionGuardada > i + 0.7) star.setAttribute("class", "fa-solid fa-star");
-    else if (puntuacionGuardada > i + 0.2) star.setAttribute("class", "fa-solid fa-star-half-alt");
-    else star.setAttribute("class", "fa-regular fa-star");
-  });
-});

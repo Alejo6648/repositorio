@@ -789,44 +789,120 @@ z-index: 20;
     font-size: 14px;
   }
 /* estrellas */
-
-.contenedor-estrellas{
-    display: none;
-}
-.relleno-star{
-    display: flex;
-    cursor: pointer;
-}
-  
-.estrella {
-    color: rgb(255,164,28);
-    font-size: 2em;
-}
+/* joseee */  
 .box-estrellas {
     display: flex;
-    flex-direction: row;
-}
-.barra {
-    width: 200px;
-    height: 30px;
-    margin-bottom: 5px;
-    border: 2px solid rgb(140, 150, 158);
+    justify-content: space-between;
+ }
+ .box-estrellas .estrella {
+    margin-right: 5px;
+  }
+  
+  .box-estrellas .estrella:last-child {
+    margin-right: 500px;
+  }
+   
+.calificacion-global {
+    width: 300px;
+    background-color: #FFF;
+    position: absolute;
+    top: 188px;
+    left: 900px;
     border-radius: 8px;
-    overflow:hidden;
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid var(--gris3);
+    padding: 10px 12px;
+    z-index: 2;
 }
-.grafica-barras {
-    margin-top: 50px;
+.triangulo-1 {
+    width: 16px;
+    height: 6px;
+    position: relative;
+    top: -16px;
+    margin: 0 auto;
+    background-color: #CCC;
+    z-index: 1;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
-.barra-1-puntaje, .barra-2-puntaje, .barra-3-puntaje,
-.barra-4-puntaje, .barra-5-puntaje {
-    background-color: rgb(255,164,28);
-    width: 0px;
-    height: 30px;
-    overflow: hidden;
+.estrella-div {
+    margin: 6px 0;
+}
+.number-star-div {
+    font-size: 16px;
+    font-weight: 600;
+}
+.text-calificacion-global {
+    font-size: 14px;
+    margin: 7px 0 12px 0;
+    color: #b7b8b8; /* Color de la letra azul por defecto */
+    text-decoration: none; /* Elimina la decoración de texto por defecto (subrayado) */
+    position: relative; /* Asegura que el posicionamiento de los elementos secundarios sea relativo a este elemento */
+}
+
+.barras-estrellas {
+    font-size: 14px;
+    margin: 6px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5ea5b2;
+    text-decoration: none; /* Elimina la decoración de texto por defecto (subrayado) */
+    position: relative; /* Asegura que el posicionamiento de los elementos secundarios sea relativo a este elemento */
+}
+
+.barras-estrellas:hover {
+    color: #ffa41c; /* Color del texto amarillo al pasar el cursor sobre el elemento */
+}
+
+.barras-estrellas:hover::after {
+    content: ''; /* Contenido vacío para crear un pseudo-elemento */
+    display: block; /* Hace que el pseudo-elemento sea un bloque */
+    width: 100%; /* Ancho del pseudo-elemento al 100% del elemento principal */
+    height: 2px; /* Grosor de la línea de raya */
+    background-color:#ffa41c; /* Color de la línea de raya amarillo */
+    position: absolute; /* Posiciona el pseudo-elemento de forma absoluta con respecto al elemento principal */
+    bottom: 0; /* Coloca el pseudo-elemento en la parte inferior del elemento principal */
+}
+
+.barra-principal {
+    width: 154px;
+    height: 20px;
+    margin: 0 10px;
+    border: 1px solid #AAA;
+    border-radius: 4px;
+}
+.barra-principal-1 {
+    margin: 0 13px;
+}
+.barra-ineterior {
+    height: 100%;
+    margin: 0;
+    background-color: #FFA41C;
+    border-radius: 2.9px;
     transition: width 1s;
 }
-/* .barra-1-puntaje, .barra {
-    background-color: rgb(255,164,28); */
-    /* width: 165px; */
-/*     height: 30px;
-} */
+.barra-ineterior-5 {
+    width: 91%;
+}
+.barra-ineterior-4 {
+    width: 5%;
+}
+.barra-ineterior-3 {
+    width: 1%;
+}
+.barra-ineterior-2 {
+    width: 1%;
+}
+.barra-ineterior-1 {
+    width: 2%;
+}
+.div-opiniones-clientes {
+    font-size: 14px;
+    padding: 12px;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

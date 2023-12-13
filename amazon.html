@@ -137,139 +137,245 @@
         <a class="marca" href="#">Visita la tienda de Xbox</a>
         <div class="infoproduc">
             <label class="txt-estilos-caracteristicas">Plataforma :<span class="txt-estilo-normal">Xbox</span></label>
-                <span class="califica">4.8
                 <!--  -->
-                <div class="relleno-star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="contenedor-estrellas">
-                    <label>Puntuación 5</label>
-                    <input id="puntuacion5" type="text" value="0"><br>
-                    <label>Puntuación 4</label>
-                    <input id="puntuacion4" type="text" value="0"><br>
-                    <label>Puntuación 3</label>
-                    <input id="puntuacion3" type="text" value="0"><br>
-                    <label>Puntuación 2</label>
-                    <input id="puntuacion2" type="text" value="0"><br>
-                    <label>Puntuación 1</label>
-                    <input id="puntuacion1" type="text" value="0"><br>
-                    <label id="sumaPuntuacion" class="suma-puntuacion"></label>
-                    <div class="grafica-barras">
-                    <div class="barra barra-1">
-                    <div id="barra1Puntaje" class="barra-1-puntaje"></div>
-                    </div>
-                    <div class="barra barra-2">
-                    <div id="barra2Puntaje" class="barra-2-puntaje"></div>
-                    </div>
-                    <div class="barra barra-3">
-                    <div id="barra3Puntaje" class="barra-3-puntaje"></div>
-                    </div>
-                    <div class="barra barra-4">
-                    <div id="barra4Puntaje" class="barra-4-puntaje"></div>
-                    </div>
-                    <div class="barra barra-5">
-                    <div id="barra5Puntaje" class="barra-5-puntaje"></div>
-                    </div>
-                    </div>
-                    <div><button id="buttonGraficar">Graficar</button></div>
-                    <div class="box-estrellas">
-                    <div class="estrella estrella-1">
-                    <i id="star1"></i>
-                    </div>
-                    <div class="estrella estrella-2">
-                    <i id="star2"></i>
-                    </div>
-                    <div class="estrella estrella-3">
-                    <i id="star3"></i>
-                    </div>
-                    <div class="estrella estrella-4">
-                    <i id="star4"></i>
-                    </div>
-                    <div class="estrella estrella-5">
-                    <i id="star5"></i>
-                    </div>
-                    </div>
-                    <div class="box-aleatorio">
-                    <span id="numRandom"></span>
-                    </div>
-                    </div>
+            <div class="box-estrellas" id="star">
+                <span class="califica" id="puntuacion"> 4.8 </span>
+                <div class="estrella">
+                    <i id="start1"></i>
+                </div>
+                <div class="estrella">
+                    <i id="start2"></i>
+                </div>
+                <div class="estrella">
+                    <i id="start3"></i>
+                </div>
+                <div class="estrella">
+                    <i id="start4"></i>
+                </div>
+                <div class="estrella">
+                    <i id="start5"></i>
+                </div>
+            </div>
+<!-- josee -->
+<div class="calificacion-global" id="calificacionGlobal">
+<div class="triangulo-1"></div>
+<div class="estrellas estrella-div">
+    <div class="estrella">
+        <i class="fa fa-star" id="etrellaUnoDivs"></i>
+        <i class="fa fa-star" id="etrellaDosDivs"></i>
+        <i class="fa fa-star" id="etrellaTresDivs"></i>
+        <i class="fa fa-star" id="etrellaCuatroDivs"></i>
+        <i class="fa fa-star" id="etrellaCincoDivs"></i> 
+    </div>                                                        
+                <P class="number-star-div"><j id="numberEstrellaDivs"></j> de 5</P>
+            </div>
+                <p class="text-calificacion-global">24,272 calificaciones globales</p>
+            <div class="barras-estrellas">
+                <p>5 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-5"></div></div>
+                <p class="porcentaje-barra">91%</p>
+            </div>
+            <div class="barras-estrellas">
+                <p>4 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-4"></div></div>
+                <p class="porcentaje-barra">5%</p>
+            </div>
+            <div class="barras-estrellas"><p>3 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-3"></div></div>
+                <p class="porcentaje-barra">1%</p></div>
+            <div class="barras-estrellas">
+                <p>2 estrellas</p>
+            <div class="barra-principal"><div class="barra-ineterior barra-ineterior-2"></div></div>
+                <p class="porcentaje-barra">1%</p>
+            </div>
+            <div class="barras-estrellas">
+                <p>1 estrellas</p>
+            <div class="barra-principal barra-principal-1"><div class="barra-ineterior barra-ineterior-1"></div></div>
+                <p class="porcentaje-barra">2%</p>
+            </div>
+            <hr>
+            <div class="div-opiniones-clientes"><a href="#" class="opiniones-clientes">Ver las opiniones de los clientes ></a></div>
+        </div>
                 <script>
-                    
-                    
-                let puntuacion5 = document.getElementById("puntuacion5");
-                let puntuacion4 = document.getElementById("puntuacion4");
-                let puntuacion3 = document.getElementById("puntuacion3");
-                let puntuacion2 = document.getElementById("puntuacion2");
-                let puntuacion1 = document.getElementById("puntuacion1");
-               
-                let barra1Puntaje = document.getElementById("barra1Puntaje");
-                let barra2Puntaje = document.getElementById("barra2Puntaje");
-                let barra3Puntaje = document.getElementById("barra3Puntaje");
-                let barra4Puntaje = document.getElementById("barra4Puntaje");
-                let barra5Puntaje = document.getElementById("barra5Puntaje");
-               
-                let porcentaje5 = 0;
-                let porcentaje4 = 0;
-                let porcentaje3 = 0;
-                let porcentaje2 = 0;
-                let porcentaje1 = 0;
-                let buttonGraficar = document.getElementById("buttonGraficar");
-               
-                buttonGraficar.addEventListener("click", function() {
-                 /* PENDIENTE VALIDAR EL INGRESO DE NUMEROS */
-                 /* Grafica 5 */
-                 let totalVotantes = parseInt(puntuacion5.value) + parseInt(puntuacion4.value) +
-                                 parseInt(puntuacion3.value) + parseInt(puntuacion2.value) + 
-                                 parseInt(puntuacion1.value);
-                 let porcentaje5 = (puntuacion5.value * 100 / totalVotantes);
-                 let porcentaje5Grafica = porcentaje5 * 2;
-                 barra1Puntaje.style.width = porcentaje5Grafica.toString() + "px";
-               
-                 /* Grafica 4 */
-                 let porcentaje4 = (puntuacion4.value * 100 / totalVotantes);
-                 let porcentaje4Grafica = porcentaje4 * 2;
-                 barra2Puntaje.style.width = porcentaje4Grafica.toString() + "px";
-               
-                 /* Grafica 3 */
-                 let porcentaje3 = (puntuacion3.value * 100 / totalVotantes);
-                 let porcentaje3Grafica = porcentaje3 * 2;
-                 barra3Puntaje.style.width = porcentaje3Grafica.toString() + "px";
-               
-                 /* Grafica 2 */
-                 let porcentaje2 = (puntuacion2.value * 100 / totalVotantes);
-                 let porcentaje2Grafica = porcentaje2 * 2;
-                 barra4Puntaje.style.width = porcentaje2Grafica.toString() + "px";
-                        /* Grafica 1 */
-            let porcentaje1 = (puntuacion1.value * 100 / totalVotantes);
-            let porcentaje1Grafica = porcentaje1 * 2;
-            barra5Puntaje.style.width = porcentaje1Grafica.toString() + "px";
-                })
+             
+/* estrellas */
+// Para visualizar el contenedor de la información de la calificación global
+let star = document.getElementById("star");
+let calificacionGlobal = document.getElementById("calificacionGlobal");
 
-                //ventana emergente
-                let estrellas = document.querySelectorAll('.fa-regular.fa-star');
-                let contenedorEstrellas = document.querySelector('.contenedor-estrellas');
+star.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+calificacionGlobal.addEventListener("mousemove", function() {
+    calificacionGlobal.style.display = "flex";
+});
+star.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
+calificacionGlobal.addEventListener("mouseleave", function () {
+    calificacionGlobal.style.display = "none";
+});
 
-                estrellas.forEach((estrella) => {
-                estrella.addEventListener('click', function(event) { 
-                event.preventDefault();
-                if (contenedorEstrellas.style.display === 'none') {
-                  contenedorEstrellas.style.display = 'block';
-                    } else {
-                  contenedorEstrellas.style.display = 'none';
-                    }
-                    });
-                    });
+// Obtener la puntuación del elemento con id "puntuacion"
+let puntuacion = parseFloat(document.getElementById("puntuacion").innerText);
+
+// Código para caja de estrellas
+let start1 = document.getElementById("start1");
+let start2 = document.getElementById("start2");
+let start3 = document.getElementById("start3");
+let start4 = document.getElementById("start4");
+let start5 = document.getElementById("start5");
+
+// Lógica para cambiar las clases de las estrellas basada en la puntuación
+if (puntuacion >= 0 && puntuacion <= 0.2) {
+  start1.setAttribute("class", "fa-regular fa-star");
+  start2.setAttribute("class", "fa-regular fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 0.2 && puntuacion <= 0.7) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-regular fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 0.7 && puntuacion <= 1.2) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 1.2 && puntuacion <= 1.7) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 1.7 && puntuacion <= 2.2) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 2.2 && puntuacion <= 2.7) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 2.7 && puntuacion <= 3.2) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 3.2 && puntuacion <= 3.7) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 3.7 && puntuacion <= 4.2) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 4.2 && puntuacion <= 4.7) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 4.7 && puntuacion <= 5) {
+  start1.setAttribute("class", "fa-solid fa-star");
+  start2.setAttribute("class", "fa-solid fa-star");
+  start3.setAttribute("class", "fa-regular fa-star");
+  start4.setAttribute("class", "fa-regular fa-star");
+  start5.setAttribute("class", "fa-regular fa-star");
+};
 
 
+// Código para calificación global
+let etrellaUnoDivs = document.getElementById("etrellaUnoDivs");
+let etrellaDosDivs = document.getElementById("etrellaDosDivs");
+let etrellaTresDivs = document.getElementById("etrellaTresDivs");
+let etrellaCuatroDivs = document.getElementById("etrellaCuatroDivs");
+let etrellaCincoDivs = document.getElementById("etrellaCincoDivs");
+
+// Lógica para cambiar las clases de las estrellas basada en la puntuación
+if (puntuacion >= 0 && puntuacion <= 0.2) {
+    etrellaUnoDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaDosDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 0.2 && puntuacion <= 0.7) {
+    etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+    etrellaDosDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 0.7 && puntuacion <= 1.2) {
+    etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+    etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+    etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+    etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+} else if (puntuacion > 1.2 && puntuacion <= 1.7) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 1.7 && puntuacion <= 2.2) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 2.2 && puntuacion <= 2.7) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 2.7 && puntuacion <= 3.2) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 3.2 && puntuacion <= 3.7) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 3.7 && puntuacion <= 4.2) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 4.2 && puntuacion <= 4.7) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+}else if (puntuacion > 4.7 && puntuacion <= 5) {
+   etrellaUnoDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaDosDivs.setAttribute("class", "fa-solid fa-star");
+   etrellaTresDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCuatroDivs.setAttribute("class", "fa-regular fa-star");
+   etrellaCincoDivs.setAttribute("class", "fa-regular fa-star");
+ }
                  </script>            
 
             <select class="star-select" name=" " id=""></select>
                 <span class="linea"> | </span>
-                    <a class="preguntas" href="#">23,930 calificaciones</a>
+                    <a class="preguntas" href="#">24,272 calificaciones</a>
                 </span>
         </div>
         <div class="precio-producto">
